@@ -1,12 +1,75 @@
 /* debug */
-.container {
+main .container {
     background-color: aqua;
     min-height: 100px;
 }
 
-[class*="col-"] {
+main [class*="col-"] {
     background-color: burlywood;
     border: 1px solid black;
     min-height: 100px;
 }
 /* /debug */
+
+/* Common */
+body {
+    text-align: center;
+}
+
+h3 {
+    margin: 2% 0;
+}
+
+/* header */
+header {
+    padding: 20px 0;
+}
+header [class*="col-"] {
+    padding: 15px;
+}
+
+header p {
+    padding: 0 15px;
+}
+
+.imgs-header {
+    height: 200px;
+}
+.imgs-header > img {
+    height: 100%;
+}
+
+/* Main */
+main {
+    background-color: #f9f9f9;
+}
+
+/* Media query */
+@media screen and (max-width: 767px) {
+
+    /* Header */
+    header {
+        padding: 0;
+        background-color: #f2f2cd;
+    }
+
+    .imgs-header {
+        height: 100px;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Header */
+    .imgs-header {
+        height: 150px;
+    }
+}
