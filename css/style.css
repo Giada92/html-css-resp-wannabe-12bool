@@ -1,0 +1,12 @@
+/* debug */
+.container {
+    background-color: aqua;
+    min-height: 100px;
+}
+
+[class*="col-"] {
+    background-color: burlywood;
+    border: 1px solid black;
+    min-height: 100px;
+}
+/* /debug */
