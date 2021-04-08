@@ -1,10 +1,10 @@
 /* debug */
-main .container {
+footer.container {
     background-color: aqua;
     min-height: 100px;
 }
 
-main [class*="col-"] {
+footer [class*="col-"] {
     background-color: burlywood;
     border: 1px solid black;
     min-height: 100px;
@@ -16,8 +16,12 @@ body {
     text-align: center;
 }
 
+p {
+    padding: 0 15px;
+}
+
 h3 {
-    margin: 2% 0;
+    margin: 3% 0;
 }
 
 /* header */
@@ -28,19 +32,17 @@ header [class*="col-"] {
     padding: 15px;
 }
 
-header p {
-    padding: 0 15px;
-}
-
-.imgs-header {
+.imgs {
     height: 200px;
 }
-.imgs-header > img {
+.imgs > img {
+    padding-top: 2%;
     height: 100%;
 }
 
 /* Main */
 main {
+    padding: 10px 0;
     background-color: #f9f9f9;
 }
 
@@ -53,23 +55,28 @@ main {
         background-color: #f2f2cd;
     }
 
-    .imgs-header {
+    .imgs {
         height: 100px;
     }
 
     h3 {
         margin: 0;
+        font-size: 22px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* Header */
-    .imgs-header {
+    .imgs {
         height: 150px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }
